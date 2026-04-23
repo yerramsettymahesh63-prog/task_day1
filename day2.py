@@ -4,8 +4,8 @@ conn=pymysql.connect(host='localhost',
                     password='Mahesh@212004')
 print("Connection successful")
 cursor=conn.cursor()
-cursor.execute('use hostel')
-cursor.execute('select * from hotel reservations')
+cursor.execute('use hotel')
+cursor.execute('select * from hotel_reviews')
 tables=cursor.fetchall()
 print(tables)
 for x in tables:
